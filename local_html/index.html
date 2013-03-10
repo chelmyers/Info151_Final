@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		
+		<title>Chelsea's Listings</title>
+		<link rel="stylesheet" href="stylesheet.css">
+
+		<script rel="javascript" type="text/javascript" src="apartments.js"></script>
+
+	</head>
+
+
+	<body>
+
+		<header>
+			<h1>Chelsea's Listings</h1>
+		</header>
+
+
+		<div id="content">
+			
+			<div id="sidebar">
+
+				<form>
+					
+					<label>Neighborhood:</label>
+					<select id="neighborhoods" name="neighborhoods" >
+						<option value="Select One">Select One</option>
+						<option value="Rittenhouse Square">Rittenhouse</option>
+						<option value="Washington Square">Washington Square</option>
+						<option value="Old City">Old City</option>
+						<option value="University City">University City</option>
+					</select>
+
+					</br>
+
+					<label for="bedrooms">Bedrooms:</label>
+
+					</br>
+
+					<input id="bedroom0" type="radio" name="bedrooms" value="0" checked >0
+					<input id="bedroom1" type="radio" name="bedrooms" value="1">1
+					<input id="bedroom2" type="radio" name="bedrooms" value="2">2
+					<input id="bedroom3" type="radio" name="bedrooms" value="3">3
+					<input id="bedroom4" type="radio" name="bedrooms" value="4">4
+					<input id="bedroom5" type="radio" name="bedrooms" value="5">5
+
+					</br>
+
+					<label for="bathrooms">Bathrooms:</label>
+
+					</br>
+
+					<input id="bathroom0" type="radio" name="bathroom" value="0" checked>0
+					<input id="bathroom1" type="radio" name="bathroom" value="1">1
+					<input id="bathroom2" type="radio" name="bathroom" value="2">2
+					<input id="bathroom3" type="radio" name="bathroom" value="3">3
+					<input id="bathroom4" type="radio" name="bathroom" value="4">4
+					<input id="bathroom5" type="radio" name="bathroom" value="5">5
+					
+					</br>
+
+					<label>Min Rent: </label>
+
+					<input id="min" type="text" name="min"/>
+
+					</br>
+
+					<label>Max Rent: </label>
+
+					<input id="max" type="text" name="max"/>
+
+
+					</br>
+
+					<label>Move In Date: </label>
+
+					<input id="moveInDate" type="text" name="date"/>
+
+					<button id="submit" type="button">Submit</button>
+					
+				</form>
+
+			</div> <!--sidebar-->
+
+			<div id="main">
+
+				<div id="apart1" class="apartment">
+					<div id="img1" class="apartImg"></div>
+					<p>Neighboorhood: <span id="neigh1"></span></p>
+					<p>Bedrooms: <span id="bed1"></span></p>
+					<p>Bathrooms: <span id="bath1"></span></p>
+					<p>Available: <span id="avail1"></span></p>	
+					<p>Monthly Rent: <span id="rent1"></span></p>
+
+				</div>
+
+				<div id="apart2" class="apartment">
+
+					<div id="img2" class="apartImg"></div>
+					<p>Neighboorhood: <span id="neigh2"></span></p>
+					<p>Bedrooms: <span id="bed2"></span></p>
+					<p>Bathrooms: <span id="bath2"></span></p>
+					<p>Available: <span id="avail2"></span></p>	
+					<p>Monthly Rent: <span id="rent2"></span></p>
+
+
+				</div>
+
+				<div id="apart3" class="apartment">
+
+					<div id="img3" class="apartImg"></div>
+					<p>Neighboorhood: <span id="neigh3"></span></p>
+					<p>Bedrooms: <span id="bed3"></span></p>
+					<p>Bathrooms: <span id="bath3"></span></p>
+					<p>Available: <span id="avail3"></span></p>	
+					<p>Monthly Rent: <span id="rent3"></span></p>
+
+				</div>
+
+				<div id="apart4" class="apartment"></div>
+
+				<div id="apart5" class="apartment"></div>
+
+				<div id="apart6" class="apartment"></div>
+
+				<div id="apart7" class="apartment"></div>
+
+				<div id="apart8" class="apartment"></div>
+
+				<div id="apart9" class="apartment"></div>
+
+				<div id="apart10" class="apartment"></div>
+
+				<div id="apart11" class="apartment"></div>
+
+				<div id="apart12" class="apartment"></div>
+
+			</div> <!--main-->
+			
+		</div><!--content-->
+		
+
+
+
+	</body><!--end of body-->
+
+</html><!--end of html->
