@@ -107,59 +107,59 @@ var get_variables = function () {
 	"\n" + "Day: " + moveDay +
 	"\n" + "Year: " + moveYear);
 	
-	searchAparts(neigh, beds, baths, minRent, maxRent, moveMonth, moveDay, moveYear);
+	search_aparts();
 
 }
 
-var searchAparts = function (sNeigh, sBed, sBath, sMin, sMax, sMonth, sDay, sYear) {
+var search_aparts = function () {
 	
 	//alert("apart: " + allAparts.length);
 	
+	reset_aparts();
+	
 	for (var i = 0; i < allAparts.length; i++) {
 	
-		//alert("i: " + i);
-		
 		var apartment = allAparts[i];
 		//alert("apartment: " + apartment);
 		
 
 		var divId = "apart" + (i + 1).toString();
-		alert("divId: " + divId);
+		//alert("divId: " + divId);
 		
 		//0 = neigh, 1 = bed, 2 = bath, 3 = month, 4 = day, 5 = year, 6 = rent;
 		
 		//check neighborhoods
-		if (sNeigh != apartment[0]){
+		if (neigh != apartment[0]){
 			$(divId).style.display = "none";
 		}
 		
 		//check bedrooms
-		if(apartment[1] < sBed){
+		if(apartment[1] < beds){
 			$(divId).style.display = "none";
 		}
 		
 		//check bathrooms
-		if(apartment[2] < sBath){
+		if(apartment[2] < baths){
 			$(divId).style.display = "none";
 		}
 		
 		//check rent
-		if ( !((apartment[6] >= sMin) && (apartment[6] <= sMax)) ){
+		if ( !((apartment[6] >= minRent) && (apartment[6] <= maxRent)) ){
 			$(divId).style.display = "none";
 		}
 		
 		//check month
-		if( apartment[3] > sMonth) {
+		if( apartment[3] > moveMonth) {
 			$(divId).style.display = "none";
 		}
 		
 		//check day
-		if( apartment[4] > sDay) {
+		if( apartment[4] > moveDay) {
 			$(divId).style.display = "none";
 		}
 		
 		//check year
-		if( apartment[5] > sYear) {
+		if( apartment[5] > moveYear) {
 			$(divId).style.display = "none";
 		}
 		
@@ -167,9 +167,12 @@ var searchAparts = function (sNeigh, sBed, sBath, sMin, sMax, sMonth, sDay, sYea
 	}
 }
 
-var update_aparts = function () {
+var reset_aparts = function () {
 
-
+	for (var i = 0; i < allAparts.length; i++) {
+		var divId = "apart" + (i + 1).toString();				
+		$(divId).style.display = "inline-block";		
+	}
 
 }
 
@@ -179,6 +182,7 @@ window.onload = function () {
 
 	load_apartments();
 	$("submit").onclick = get_variables;
+	$("reset").onclick = reset_aparts;
 	//alert(apart1.neighborhood + "\n" + 1
 	//apart1.bedrooms + "\n" + apart1.bathrooms + "\n" +
 	//apart1.month + "\n" + apart1.day + "\n" + apart1.year);
