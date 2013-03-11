@@ -150,18 +150,12 @@ var get_variables = function () {
 		beds = $("bedroom5").value;
 	} 
 
-	if ($("bathroom0").checked) {
-		baths = $("bathroom0").value;
-	} else if ($("bathroom1").checked) {
+	if ($("bathroom1").checked) {
 		baths = $("bathroom1").value;
 	} else if ($("bathroom2").checked) {
 		baths = $("bathroom2").value;
 	} else if ($("bathroom3").checked) {
 		baths = $("bathroom3").value;
-	} else if ($("bathroom4").checked) {
-		baths = $("bathroom4").value;
-	} else if ($("bathroom5").checked) {
-		baths = $("bathroom5").value;
 	} 
 
 	minRent = $("min").value;
@@ -202,8 +196,6 @@ var get_variables = function () {
 var search_aparts = function () {
 	
 	//alert("apart: " + allAparts.length);
-	
-	reset_aparts();
 	
 	for (var i = 0; i < allAparts.length; i++) {
 	
