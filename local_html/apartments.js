@@ -12,8 +12,17 @@ var apart3 = ["Washington Square", 2, 2.5, 6, 01, 2013, 3700];
 var apart4 = ["Old City", 2, 2, 6, 01, 2013, 3400];
 var apart5 = ["Old City", 0, 1, 7, 01, 2013, 1425];
 var apart6 = ["University City", 1, 1, 3, 01, 2013, 1275];
+var apart7 = ["Rittenhouse Square", 3, 3, 4, 01, 2013, 8275];
+var apart8 = ["Rittenhouse Square", 1, 1, 6, 01, 2013, 1480];
+var apart9 = ["Washington Square", 2, 1, 10, 01, 2013, 1900];
+var apart10 = ["Old City", 1, 1, 8, 01, 2013, 1300];
+var apart11 = ["University City", 2, 2, 3, 01, 2013, 2000];
+var apart12 = ["Washington Square", 1, 1, 5, 01, 2013, 1500];
 
-var allAparts = [apart1, apart2, apart3];
+var allAparts = [apart1, apart2, apart3, 
+	apart4, apart5, apart6, 
+	apart7, apart8, apart9, 
+	apart10, apart11, apart12];
 
 var load_apartments = function () {
 
@@ -65,6 +74,54 @@ var load_apartments = function () {
 	$("avail6").innerHTML = (apart6[3] + 1) + "/" +
 		apart6[4] + "/" + apart6[5]
 	$("rent6").innerHTML = "$" + apart6[6];
+	
+	//apart7
+	$("neigh7").innerHTML = apart7[0];
+	$("bed7").innerHTML = apart7[1];
+	$("bath7").innerHTML = apart7[2];
+	$("avail7").innerHTML = (apart7[3] + 1) + "/" +
+		apart7[4] + "/" + apart7[5]
+	$("rent7").innerHTML = "$" + apart7[6];
+	
+	//apart8
+	$("neigh8").innerHTML = apart8[0];
+	$("bed8").innerHTML = apart8[1];
+	$("bath8").innerHTML = apart8[2];
+	$("avail8").innerHTML = (apart8[3] + 1) + "/" +
+		apart8[4] + "/" + apart8[5]
+	$("rent8").innerHTML = "$" + apart8[6]
+	
+	//apart9
+	$("neigh9").innerHTML = apart9[0];
+	$("bed9").innerHTML = apart9[1];
+	$("bath9").innerHTML = apart9[2];
+	$("avail9").innerHTML = (apart9[3] + 1) + "/" +
+		apart9[4] + "/" + apart9[5]
+	$("rent9").innerHTML = "$" + apart9[6]
+	
+	//apart10
+	$("neigh10").innerHTML = apart10[0];
+	$("bed10").innerHTML = apart10[1];
+	$("bath10").innerHTML = apart10[2];
+	$("avail10").innerHTML = (apart10[3] + 1) + "/" +
+		apart10[4] + "/" + apart10[5]
+	$("rent10").innerHTML = "$" + apart10[6]
+	
+	//apart11
+	$("neigh11").innerHTML = apart11[0];
+	$("bed11").innerHTML = apart11[1];
+	$("bath11").innerHTML = apart11[2];
+	$("avail11").innerHTML = (apart11[3] + 1) + "/" +
+		apart11[4] + "/" + apart11[5]
+	$("rent11").innerHTML = "$" + apart11[6]
+	
+	//apart12
+	$("neigh12").innerHTML = apart12[0];
+	$("bed12").innerHTML = apart12[1];
+	$("bath12").innerHTML = apart12[2];
+	$("avail12").innerHTML = (apart12[3] + 1) + "/" +
+		apart12[4] + "/" + apart12[5]
+	$("rent12").innerHTML = "$" + apart12[6]
 	
 		
 }
