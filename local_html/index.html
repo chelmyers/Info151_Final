@@ -16,11 +16,12 @@
 		<header>
 			<h1>Chelsea's Listings</h1>
 		</header>
+		<div id="scallops"></div>
 
 
 		<div id="content">
 			
-			<div id="sidebar">
+			<div id="searchBar">
 
 				<form>
 					
@@ -33,49 +34,51 @@
 						<option value="University City">University City</option>
 					</select>
 
-					</br>
+
+					<span class="formBreak">|</span>
+
 
 					<label for="bedrooms">Bedrooms:</label>
-
-					</br>
-
 					<input id="bedroom0" type="radio" name="bedrooms" value="0" checked >0
 					<input id="bedroom1" type="radio" name="bedrooms" value="1">1
 					<input id="bedroom2" type="radio" name="bedrooms" value="2">2
 					<input id="bedroom3" type="radio" name="bedrooms" value="3">3
 					
-					</br>
+					
+					<span class="formBreak">|</span>
+					
 
 					<label for="bathrooms">Bathrooms:</label>
-
-					</br>
-
 					<input id="bathroom1" type="radio" name="bathroom" value="1" checked>1
 					<input id="bathroom2" type="radio" name="bathroom" value="2">2
 					<input id="bathroom3" type="radio" name="bathroom" value="3">3
 
+
+					<span class="formBreak">|</span>
 					
-					</br>
 
 					<label>Min Rent: </label>
-
 					<input id="min" type="text" name="min"/>
 
-					</br>
 
+					<span class="formBreak">|</span>
+			
+			
 					<label>Max Rent: </label>
-
 					<input id="max" type="text" name="max"/>
 
 
-					</br>
-
+					<span class="formBreak">|</span>
+		
+		
 					<label>Move In Date: </label>
-
 					<input id="moveInDate" type="text" name="date"/>
-
-					<button id="submit" type="button">Submit</button>
 					
+					
+					<span class="formBreak">|</span>
+					
+
+					<button id="submit" type="button">Submit</button>					
 					<input id="reset" type="reset" value="Reset"/>
 					
 				</form>
@@ -85,7 +88,7 @@
 			<div id="main">
 
 				<div id="apart1" class="apartment" >
-					<a href="img/apart1.jpg"><img src="img/apart1Thumb.jpg" alt="0bd/1br" width="300" /></a>
+					<a href="img/aparts/apart1.jpg"><img src="img/aparts/apart1Thumb.jpg" alt="0bd/1br" width="300" /></a>
 					<p>Neighboorhood: <span id="neigh1"></span></p>
 					<p>Bedrooms: <span id="bed1"></span></p>
 					<p>Bathrooms: <span id="bath1"></span></p>
@@ -96,7 +99,7 @@
 
 				<div id="apart2" class="apartment">
 
-					<a href="img/apart2.jpg"><img src="img/apart2Thumb.jpg" alt="1bd/1br" width="300" /></a>
+					<a href="img/aparts/apart2.jpg"><img src="img/aparts/apart2Thumb.jpg" alt="1bd/1br" width="300" /></a>
 					<p>Neighboorhood: <span id="neigh2"></span></p>
 					<p>Bedrooms: <span id="bed2"></span></p>
 					<p>Bathrooms: <span id="bath2"></span></p>
@@ -108,7 +111,7 @@
 
 				<div id="apart3" class="apartment">
 
-					<a href="img/apart3.jpg"><img src="img/apart3Thumb.jpg" alt="2bd/2.5br" width="300" /></a>
+					<a href="img/aparts/apart3.jpg"><img src="img/aparts/apart3Thumb.jpg" alt="2bd/2.5br" width="300" /></a>
 					<p>Neighboorhood: <span id="neigh3"></span></p>
 					<p>Bedrooms: <span id="bed3"></span></p>
 					<p>Bathrooms: <span id="bath3"></span></p>
@@ -119,7 +122,7 @@
 
 				<div id="apart4" class="apartment">
 					
-					<a href="img/apart4.jpg"><img src="img/apart4Thumb.jpg" alt="2bd/2br" width="300" /></a>
+					<a href="img/aparts/apart4.jpg"><img src="img/aparts/apart4Thumb.jpg" alt="2bd/2br" width="300" /></a>
 					<p>Neighboorhood: <span id="neigh4"></span></p>
 					<p>Bedrooms: <span id="bed4"></span></p>
 					<p>Bathrooms: <span id="bath4"></span></p>
@@ -130,7 +133,7 @@
 
 				<div id="apart5" class="apartment">
 					
-					<a href="img/apart5.jpg"><img src="img/apart5Thumb.jpg" alt="0bd/1br" width="300" /></a>
+					<a href="img/aparts/apart5.jpg"><img src="img/aparts/apart5Thumb.jpg" alt="0bd/1br" width="300" /></a>
 					<p>Neighboorhood: <span id="neigh5"></span></p>
 					<p>Bedrooms: <span id="bed5"></span></p>
 					<p>Bathrooms: <span id="bath5"></span></p>
@@ -141,7 +144,7 @@
 
 				<div id="apart6" class="apartment">
 					
-					<a href="img/apart6.jpg"><img src="img/apart6Thumb.jpg" alt="1bd/1br" width="300" /></a>
+					<a href="img/aparts/apart6.jpg"><img src="img/aparts/apart6Thumb.jpg" alt="1bd/1br" width="300" /></a>
 					<p>Neighboorhood: <span id="neigh6"></span></p>
 					<p>Bedrooms: <span id="bed6"></span></p>
 					<p>Bathrooms: <span id="bath6"></span></p>
@@ -152,7 +155,7 @@
 
 				<div id="apart7" class="apartment">
 					
-					<a href="img/apart7.jpg"><img src="img/apart7Thumb.jpg" alt="3bd/3br" width="300" /></a>
+					<a href="img/aparts/apart7.jpg"><img src="img/aparts/apart7Thumb.jpg" alt="3bd/3br" width="300" /></a>
 					<p>Neighboorhood: <span id="neigh7"></span></p>
 					<p>Bedrooms: <span id="bed7"></span></p>
 					<p>Bathrooms: <span id="bath7"></span></p>
@@ -163,7 +166,7 @@
 
 				<div id="apart8" class="apartment">
 					
-					<a href="img/apart8.jpg"><img src="img/apart8Thumb.jpg" alt="1bd/1br" width="300" /></a>
+					<a href="img/aparts/apart8.jpg"><img src="img/aparts/apart8Thumb.jpg" alt="1bd/1br" width="300" /></a>
 					<p>Neighboorhood: <span id="neigh8"></span></p>
 					<p>Bedrooms: <span id="bed8"></span></p>
 					<p>Bathrooms: <span id="bath8"></span></p>
@@ -174,7 +177,7 @@
 
 				<div id="apart9" class="apartment">
 					
-					<a href="img/apart9.jpg"><img src="img/apart9Thumb.jpg" alt="1bd/1br" width="300" /></a>
+					<a href="img/aparts/apart9.jpg"><img src="img/aparts/apart9Thumb.jpg" alt="1bd/1br" width="300" /></a>
 					<p>Neighboorhood: <span id="neigh9"></span></p>
 					<p>Bedrooms: <span id="bed9"></span></p>
 					<p>Bathrooms: <span id="bath9"></span></p>
@@ -185,7 +188,7 @@
 
 				<div id="apart10" class="apartment">
 					
-					<a href="img/apart10.jpg"><img src="img/apart10Thumb.jpg" alt="1bd/1br" width="300" /></a>
+					<a href="img/aparts/apart10.jpg"><img src="img/aparts/apart10Thumb.jpg" alt="1bd/1br" width="300" /></a>
 					<p>Neighboorhood: <span id="neigh10"></span></p>
 					<p>Bedrooms: <span id="bed10"></span></p>
 					<p>Bathrooms: <span id="bath10"></span></p>
@@ -196,7 +199,7 @@
 
 				<div id="apart11" class="apartment">
 					
-					<a href="img/apart11.jpg"><img src="img/apart11Thumb.jpg" alt="1bd/1br" width="300" /></a>
+					<a href="img/aparts/apart11.jpg"><img src="img/aparts/apart11Thumb.jpg" alt="1bd/1br" width="300" /></a>
 					<p>Neighboorhood: <span id="neigh11"></span></p>
 					<p>Bedrooms: <span id="bed11"></span></p>
 					<p>Bathrooms: <span id="bath11"></span></p>
@@ -207,7 +210,7 @@
 
 				<div id="apart12" class="apartment">
 					
-					<a href="img/apart12.jpg"><img src="img/apart12Thumb.jpg" alt="1bd/1br" width="300" /></a>
+					<a href="img/aparts/apart12.jpg"><img src="img/aparts/apart12Thumb.jpg" alt="1bd/1br" width="300" /></a>
 					<p>Neighboorhood: <span id="neigh12"></span></p>
 					<p>Bedrooms: <span id="bed12"></span></p>
 					<p>Bathrooms: <span id="bath12"></span></p>
