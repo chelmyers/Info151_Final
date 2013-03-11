@@ -12,7 +12,7 @@ var apart3 = ["Washington Square", 2, 2.5, 6, 01, 2013, 3700];
 var apart4 = ["Old City", 2, 2, 6, 01, 2013, 3400];
 var apart5 = ["Old City", 0, 1, 7, 01, 2013, 1425];
 var apart6 = ["University City", 1, 1, 3, 01, 2013, 1275];
-var apart7 = ["Rittenhouse Square", 3, 3, 4, 01, 2013, 8275];
+var apart7 = ["Rittenhouse Square", 3, 2.5, 4, 01, 2013, 8275];
 var apart8 = ["Rittenhouse Square", 1, 1, 6, 01, 2013, 1480];
 var apart9 = ["Washington Square", 2, 1, 10, 01, 2013, 1900];
 var apart10 = ["Old City", 1, 1, 8, 01, 2013, 1300];
@@ -144,10 +144,6 @@ var get_variables = function () {
 		beds = $("bedroom2").value;
 	} else if ($("bedroom3").checked) {
 		beds = $("bedroom3").value;
-	} else if ($("bedroom4").checked) {
-		beds = $("bedroom4").value;
-	} else if ($("bedroom5").checked) {
-		beds = $("bedroom5").value;
 	} 
 
 	if ($("bathroom1").checked) {
@@ -181,13 +177,13 @@ var get_variables = function () {
 	moveDay = moveIn.substring(3, 5);
 	moveYear = moveIn.substring(6, 10);
 
-	alert("Neigh: " + neigh + "\n" +
-	"Beds: " + beds + " Baths: " + baths +
-	"\n" + "Min: " + minRent + 
-	"\n" + "Max: " + maxRent +
-	"\n" + "Month: " + moveMonth +
-	"\n" + "Day: " + moveDay +
-	"\n" + "Year: " + moveYear);
+	//alert("Neigh: " + neigh + "\n" +
+	//"Beds: " + beds + " Baths: " + baths +
+	//"\n" + "Min: " + minRent + 
+	//"\n" + "Max: " + maxRent +
+	//"\n" + "Month: " + moveMonth +
+	//"\n" + "Day: " + moveDay +
+	//"\n" + "Year: " + moveYear);
 	
 	search_aparts();
 
@@ -196,6 +192,7 @@ var get_variables = function () {
 var search_aparts = function () {
 	
 	//alert("apart: " + allAparts.length);
+	reset_aparts()
 	
 	for (var i = 0; i < allAparts.length; i++) {
 	
