@@ -6,22 +6,27 @@ var neigh, beds, baths, minRent, maxRent, moveIn,
 moveMonth, moveDay, moveYear;
 
 // 0 = neigh, 1 = bed, 2 = bath, 3 = month, 4 = day, 5 = year, 6 = rent;
-var apart1 = ["Rittenhouse Square", 0, 1, 3, 1, 2013, 1250];
+var apart1 = ["Rittenhouse Square", 0, 1, 3, 01, 2013, 1250];
 var apart2 = ["University City", 1, 1, 5, 1, 2013, 1520];
-var apart3 = ["Washington Square", 2, 2.5, 6, 1, 2013, 3100];
+var apart3 = ["Washington Square", 2, 2.5, 6, 01, 2013, 3700];
+var apart4 = ["Old City", 2, 2, 6, 01, 2013, 3400];
+var apart5 = ["Old City", 0, 1, 7, 01, 2013, 1425];
+var apart6 = ["University City", 1, 1, 3, 01, 2013, 1275];
 
 var allAparts = [apart1, apart2, apart3];
 
 var load_apartments = function () {
 
+	//apart1
 	$("neigh1").innerHTML = apart1[0];
 	$("bed1").innerHTML = apart1[1];
 	$("bath1").innerHTML = apart1[2];
 	$("avail1").innerHTML = (apart1[3] + 1) + "/" +
 		apart1[4] + "/" + apart1[5];
 	$("rent1").innerHTML = "$" + apart1[6];
+	
 
-
+	//apart2
 	$("neigh2").innerHTML = apart2[0];
 	$("bed2").innerHTML = apart2[1];
 	$("bath2").innerHTML = apart2[2];
@@ -29,13 +34,39 @@ var load_apartments = function () {
 		apart2[4]+ "/" + apart2[5];
 	$("rent2").innerHTML = "$" + apart2[6];
 
-
+	//apart3
 	$("neigh3").innerHTML = apart3[0];
 	$("bed3").innerHTML = apart3[1];
 	$("bath3").innerHTML = apart3[2];
 	$("avail3").innerHTML = (apart3[3] + 1) + "/" +
 		apart3[4] + "/" + apart3[5]
 	$("rent3").innerHTML = "$" + apart3[6];
+	
+	//apart4
+	$("neigh4").innerHTML = apart4[0];
+	$("bed4").innerHTML = apart4[1];
+	$("bath4").innerHTML = apart4[2];
+	$("avail4").innerHTML = (apart4[3] + 1) + "/" +
+		apart4[4] + "/" + apart4[5]
+	$("rent4").innerHTML = "$" + apart4[6];
+	
+	//apart5
+	$("neigh5").innerHTML = apart5[0];
+	$("bed5").innerHTML = apart5[1];
+	$("bath5").innerHTML = apart5[2];
+	$("avail5").innerHTML = (apart5[3] + 1) + "/" +
+		apart5[4] + "/" + apart5[5]
+	$("rent5").innerHTML = "$" + apart5[6];
+	
+	//apart6
+	$("neigh6").innerHTML = apart6[0];
+	$("bed6").innerHTML = apart6[1];
+	$("bath6").innerHTML = apart6[2];
+	$("avail6").innerHTML = (apart6[3] + 1) + "/" +
+		apart6[4] + "/" + apart6[5]
+	$("rent6").innerHTML = "$" + apart6[6];
+	
+		
 }
 
 var get_variables = function () {

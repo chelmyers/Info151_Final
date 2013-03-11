@@ -25,6 +25,7 @@ label{
 	width:25%;
 	float:left;
 	background-color: orange;
+	height:100%;
 }
 
 #main {
@@ -44,3 +45,14 @@ label{
 #min, #max {
 	width: 35px;
 }
+
+
+/*.apartImg{
+	min-width:100px;
+	min-height: 200px;
+}
+
+#img1 {
+	background-image: url(img/apart1.jpg) top left no-repeat;
+	background-size:contain;
+}*/
