@@ -2,9 +2,11 @@ var $ = function (id) {
 	return document.getElementById(id); 
 }
 
+//variable to store input data into
 var neigh, beds, baths, minRent, maxRent, moveIn, 
 moveMonth, moveDay, moveYear;
 
+// create array for each apartment. Index values equal :
 // 0 = neigh, 1 = bed, 2 = bath, 3 = month, 4 = day, 5 = year, 6 = rent;
 var apart1 = ["Rittenhouse Square", 0, 1, 3, 01, 2013, 1250];
 var apart2 = ["University City", 1, 1, 5, 1, 2013, 1520];
@@ -19,11 +21,13 @@ var apart10 = ["Old City", 1, 1, 8, 01, 2013, 1300];
 var apart11 = ["University City", 2, 2, 3, 01, 2013, 2000];
 var apart12 = ["Washington Square", 1, 1, 5, 01, 2013, 1500];
 
+// store apartment array into larger array
 var allAparts = [apart1, apart2, apart3, 
 	apart4, apart5, apart6, 
 	apart7, apart8, apart9, 
 	apart10, apart11, apart12];
 
+//load apartment information into divs in HTML index page
 var load_apartments = function () {
 
 	//apart1
@@ -34,7 +38,6 @@ var load_apartments = function () {
 		apart1[4] + "/" + apart1[5];
 	$("rent1").innerHTML = "$" + apart1[6];
 	
-
 	//apart2
 	$("neigh2").innerHTML = apart2[0];
 	$("bed2").innerHTML = apart2[1];
@@ -122,7 +125,6 @@ var load_apartments = function () {
 	$("avail12").innerHTML = (apart12[3] + 1) + "/" +
 		apart12[4] + "/" + apart12[5]
 	$("rent12").innerHTML = "$" + apart12[6]
-	
 		
 }
 
@@ -155,6 +157,11 @@ var get_variables = function () {
 	} 
 
 	minRent = $("min").value;
+	if(isNan(minRent) || minRent < 0) {
+		alert("Please enter a positive value greater than or equal to 0.");
+		return;	
+	}
+	
 	if(minRent == "") {
 		alert("Please enter a minimum rent rate.");
 		return;	
