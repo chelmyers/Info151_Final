@@ -1,3 +1,38 @@
+/*FONTS*/
+@font-face {
+    font-family: 'aller_litReg';
+    src: url('fonts/aller_lt-webfont.eot');
+    src: url('fonts/aller_lt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aller_lt-webfont.woff') format('woff'),
+         url('fonts/aller_lt-webfont.ttf') format('truetype'),
+         url('fonts/aller_lt-webfont.svg#aller_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mateReg';
+    src: url('fonts/mate-regular-webfont.eot');
+    src: url('fonts/mate-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mate-regular-webfont.woff') format('woff'),
+         url('fonts/mate-regular-webfont.ttf') format('truetype'),
+         url('fonts/mate-regular-webfont.svg#materegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hello_denver';
+    src: url('fonts/hellodenverdisplayregular_v1.6-webfont.eot');
+    src: url('fonts/hellodenverdisplayregular_v1.6-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hellodenverdisplayregular_v1.6-webfont.woff') format('woff'),
+         url('fonts/hellodenverdisplayregular_v1.6-webfont.ttf') format('truetype'),
+         url('fonts/hellodenverdisplayregular_v1.6-webfont.svg#hello_denver_display_regulaRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body,
 html {
 	padding:0;
