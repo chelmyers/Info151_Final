@@ -59,6 +59,9 @@ h1 {
 	margin: 0;
 }
 
+#logo {
+	width:300px;
+}
 
 
 /*WRAPPERS*/
@@ -196,3 +199,36 @@ span {
 	background: url('img/noResults.png') center center no-repeat;
 }
 
+
+@media all and (max-width: 738px) and (min-width: 0px){
+	
+	#logo {
+		width:200px;
+	}
+	
+	#main {
+		max-width: 370px;
+	}
+	#sect4 {
+		width: 112px;
+	}
+	
+}
+
+@media all and (max-width: 1108px) and (min-width: 739px){
+	
+
+	#main {
+		max-width: 740px;
+	}
+	
+}
+
+@media all and (min-width: 1600px){
+	
+
+	#main {
+		max-width: 1484px;
+	}
+	
+}
