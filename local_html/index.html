@@ -13,75 +13,74 @@
 
 	<body>
 
-		<header>
-			<h1>The Apt App</h1>
-		</header>
-		<div id="scallops"></div>
-
-
+		
 		<div id="content">
 			
-			<div id="searchBar">
-
-				<form>
-					
-					<label>Neighborhood:</label>
-					<select id="neighborhoods" name="neighborhoods" >
-						<option value="Select One">Select One</option>
-						<option value="Rittenhouse Square">Rittenhouse</option>
-						<option value="Washington Square">Washington Square</option>
-						<option value="Old City">Old City</option>
-						<option value="University City">University City</option>
-					</select>
-
-
-					
-
-
-					<label for="bedrooms">Bedrooms:</label>
-					<input id="bedroom0" type="radio" name="bedrooms" value="0" checked >0
-					<input id="bedroom1" type="radio" name="bedrooms" value="1">1
-					<input id="bedroom2" type="radio" name="bedrooms" value="2">2
-					<input id="bedroom3" type="radio" name="bedrooms" value="3">3
-					
-					
-					
-					
-
-					<label for="bathrooms">Bathrooms:</label>
-					<input id="bathroom1" type="radio" name="bathroom" value="1" checked>1
-					<input id="bathroom2" type="radio" name="bathroom" value="2">2
-					<input id="bathroom3" type="radio" name="bathroom" value="3">3
-
-
-					</br>
-					
-
-					<label>Min Rent: </label>
-					<input id="min" type="text" name="min"/>
+			<header>
+			<img src="img/aptAppLogo.png" alt="The Apt App" width="300"/>
 			
+			<!--<div id="scallops"></div>-->
+
+
+
+				<div id="searchBar">
+
+					<form>
+						
+						<div id="sect1">
+						
+							<label>Neighborhood:</label>
+							<select id="neighborhoods" name="neighborhoods" >
+								<option value="Select One">Select One</option>
+								<option value="Rittenhouse Square">Rittenhouse</option>
+								<option value="Washington Square">Washington Square</option>
+								<option value="Old City">Old City</option>
+								<option value="University City">University City</option>
+							</select>
+							
+							<label>Move In Date: </label>
+							<input id="moveInDate" type="text" name="date" placeholder="MM/DD/YYYY"/>
+						
+						</div> <!--sect1-->
+						
+						
+						<div id="sect2">
+							<label for="bedrooms">Bedrooms:</label>
+							<input id="bedroom0" type="radio" name="bedrooms" value="0" checked >0
+							<input id="bedroom1" type="radio" name="bedrooms" value="1">1
+							<input id="bedroom2" type="radio" name="bedrooms" value="2">2
+							<input id="bedroom3" type="radio" name="bedrooms" value="3">3
+	
+		
+							<label for="bathrooms">Bathrooms:</label>
+							<input id="bathroom1" type="radio" name="bathroom" value="1" checked>1
+							<input id="bathroom2" type="radio" name="bathroom" value="2">2
+							<input id="bathroom3" type="radio" name="bathroom" value="3">3
+						</div> <!--sect2-->
+						
+						
+						<div id="sect3">	
+							<label style="padding-right:4px;">Min Rent: </label>
+							<input id="min" type="text" name="min"/>
+					
+					
+							<label>Max Rent: </label>
+							<input id="max" type="text" name="max"/>
+						</div> <!--sect3-->
 			
-					<label>Max Rent: </label>
-					<input id="max" type="text" name="max"/>
-
-
-					
-		
-		
-					<label>Move In Date: </label>
-					<input id="moveInDate" type="text" name="date"/>
-					
-					
-					
-					
-
-					<button id="submit" type="button">Submit</button>					
-					<input id="reset" type="reset" value="Reset"/>
-					
-				</form>
-
-			</div> <!--sidebar-->
-
+	
+						<div id="sect4">
+							<button id="submit" type="button">Submit</button>					
+							<input id="reset" type="reset" value="Reset"/>
+						</div> <!--sect4-->
+						
+						
+					</form>
+	
+				</div> <!--sidebar-->
+				
+			</header>
+			
 			<div id="main">
 
 				<div id="apart1" class="apartment" >

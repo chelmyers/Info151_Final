@@ -44,8 +44,9 @@ html {
 /*HEADER*/
 header {
 	width:100%;
-	background-color: #b1ebe1;
+	background: url("img/fabric_of_squares_gray.png")  top left repeat;
 	margin:0;
+	text-align: center;
 }
 
 h1 {
@@ -56,11 +57,11 @@ h1 {
 	margin: 0;
 }
 
-#scallops {
+/*#scallops {
 	width:100%;
 	min-height:10px;
 	background: url("img/scallop.png") top left repeat-x;
-}
+}*/
 
 /*WRAPPERS*/
 #content {
@@ -76,10 +77,10 @@ h1 {
 
 #searchBar{
 	width:100%;
-	background-color: #d4d4d4;
 	min-height: 50px;
 	text-align: center;
 	border-bottom: 1px solid black;
+	padding-bottom:20px;
 }
 
 
@@ -89,10 +90,14 @@ form {
 	padding: 11px 0px 0px 0px;
 	font-family: Verdana, sans-serif;
 	font-size: .8em;
+	text-align: left;
+	display: inline;
 }
+	form div {
+		display:inline-block;
+	}
 label{
-	margin-top:20px;
-	margin-left: 20px;
+
 }
 
 #min, #max {
@@ -110,10 +115,44 @@ label{
 	padding-bottom: 4px;
 }
 
-input {
-	margin-bottom: 20px;
+
+#sect1 {
+	width:276px;
+}
+	#sect1 input {
+		margin-top:10px;
+	}
+
+
+	
+#sect2 {
+	width:218px;
+	margin-left:10px;
 }
 
+#bathroom1 {
+	margin-top:15px;
+}
+
+
+
+#sect3 {
+	width: 134px;
+	margin-left:10px;
+}
+
+#max {
+	margin-top:9px;
+}
+
+
+#sect4 {
+	width: 60px;
+	margin-left:10px;
+}
+#reset {
+	margin-top:11px;
+}
 
 
 /*APARTMENT DIVS*/
