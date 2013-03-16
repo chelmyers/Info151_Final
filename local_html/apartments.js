@@ -279,13 +279,29 @@ var search_aparts = function () {
 		
 		
 	}
+	
+	if ($("apart1").style.display == "none" &&
+		$("apart2").style.display == "none" &&
+		$("apart3").style.display == "none" &&
+		$("apart4").style.display == "none" &&
+		$("apart5").style.display == "none" &&
+		$("apart6").style.display == "none" &&
+		$("apart7").style.display == "none" &&
+		$("apart8").style.display == "none" &&
+		$("apart9").style.display == "none" &&
+		$("apart10").style.display == "none" &&
+		$("apart11").style.display == "none" &&
+		$("apart12").style.display == "none") {
+			$("noResults").style.display = "block"; 
+		}
 }
 
 var reset_aparts = function () {
 
 	for (var i = 0; i < allAparts.length; i++) {
 		var divId = "apart" + (i + 1).toString();				
-		$(divId).style.display = "inline-block";		
+		$(divId).style.display = "inline-block";
+		$("noResults").style.display = "none"		
 	}
 
 }
