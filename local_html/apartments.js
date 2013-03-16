@@ -157,7 +157,8 @@ var get_variables = function () {
 	} 
 
 	minRent = $("min").value;
-	if(isNan(minRent) || minRent < 0) {
+	
+	if(isNaN(minRent) || minRent < 0) {
 		alert("Please enter a positive value greater than or equal to 0.");
 		return;	
 	}
@@ -179,11 +180,40 @@ var get_variables = function () {
 		return;	
 	}
 	
-
+	var slash1 = moveIn.indexOf("/");
+    var slash2 = moveIn.lastIndexOf("/");
+    var length = moveIn.length;
+	
+	if(!(slash1 == 2 && slash2 == 5 && length == 10 )) {
+		alert("Please enter a move in date in the correct format (MM/DD/YYYY).");
+		return;		
+	}
+	
 	moveMonth = moveIn.substring(0, 2) - 1;
 	moveDay = moveIn.substring(3, 5);
 	moveYear = moveIn.substring(6, 10);
+	
+	if (moveMonth == -1 ||  moveMonth > 11) {
+		alert("Please a correct month (MM/DD/YYYY).");
+		return;	
+	}
 
+	if (moveDay == 0 ||  moveDay > 31) {
+		alert("Please a correct day (MM/DD/YYYY).");
+		return;	
+	}
+	
+	if (moveYear < 2013) {
+		alert("Please a correct year that hasn't passed (MM/DD/YYYY).");
+		return;	
+	}
+	
+	if (moveYear > 2014) {
+		alert("Sorry, we have no listings that far in advance.");
+		return;	
+	}
+	
+	
 	//alert("Neigh: " + neigh + "\n" +
 	//"Beds: " + beds + " Baths: " + baths +
 	//"\n" + "Min: " + minRent + 

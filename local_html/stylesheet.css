@@ -47,6 +47,7 @@ header {
 	background: url("img/fabric_of_squares_gray.png")  top left repeat;
 	margin:0;
 	text-align: center;
+	box-shadow: 5px 4px 9px rgba(0,0,0,0.28);
 }
 
 h1 {
@@ -57,11 +58,7 @@ h1 {
 	margin: 0;
 }
 
-/*#scallops {
-	width:100%;
-	min-height:10px;
-	background: url("img/scallop.png") top left repeat-x;
-}*/
+
 
 /*WRAPPERS*/
 #content {
