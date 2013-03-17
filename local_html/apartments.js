@@ -6,6 +6,11 @@ var $ = function (id) {
 var neigh, beds, baths, minRent, maxRent, moveIn, 
 moveMonth, moveDay, moveYear;
 
+var curDate = new Date();
+var curMonth = curDate.getMonth();
+var curDay = curDate.getDate();
+var curYear = curDate.getFullYear();
+
 // create array for each apartment. Index values equal :
 // 0 = neigh, 1 = bed, 2 = bath, 3 = month, 4 = day, 5 = year, 6 = rent;
 var apart1 = ["Rittenhouse Square", 0, 1, 3, 01, 2013, 1250];
@@ -189,30 +194,47 @@ var get_variables = function () {
 		return;		
 	}
 	
+		
 	moveMonth = moveIn.substring(0, 2) - 1;
 	moveDay = moveIn.substring(3, 5);
 	moveYear = moveIn.substring(6, 10);
 	
-	if (moveMonth == -1 ||  moveMonth > 11) {
-		alert("Please a correct month (MM/DD/YYYY).");
+	if (moveMonth <= -1 ||  moveMonth > 11) {
+		alert("Please enter a correct month (MM/DD/YYYY).");
 		return;	
 	}
+	
+	if(moveYear == curYear){
+		if (moveMonth < curMonth) {
+			alert("Please enter a correct month that has not passed.");
+			return;	
+			}
+	}
+	
+	if(moveMonth == curMonth) {
+		if (moveDay < curDay){
+			alert("Please enter a correct day that has not passed.");
+			return;
+		}
+	}	
+	
 
 	if (moveDay == 0 ||  moveDay > 31) {
-		alert("Please a correct day (MM/DD/YYYY).");
+		alert("Please enter a correct day (MM/DD/YYYY).");
 		return;	
 	}
 	
-	if (moveYear < 2013) {
-		alert("Please a correct year that hasn't passed (MM/DD/YYYY).");
+	if (moveYear < curYear) {
+		alert("Please enter a correct year that hasn't passed (MM/DD/YYYY).");
 		return;	
 	}
 	
-	if (moveYear > 2014) {
+	if (moveYear == (curYear + 2)) {
 		alert("Sorry, we have no listings that far in advance.");
 		return;	
 	}
 	
+
 	
 	//alert("Neigh: " + neigh + "\n" +
 	//"Beds: " + beds + " Baths: " + baths +
@@ -243,8 +265,10 @@ var search_aparts = function () {
 		//0 = neigh, 1 = bed, 2 = bath, 3 = month, 4 = day, 5 = year, 6 = rent;
 		
 		//check neighborhoods
-		if (neigh != apartment[0]){
-			$(divId).style.display = "none";
+		if( neigh != "All"){
+			if (neigh != apartment[0]){
+				$(divId).style.display = "none";
+			}
 		}
 		
 		//check bedrooms
@@ -263,8 +287,10 @@ var search_aparts = function () {
 		}
 		
 		//check month
-		if( apartment[3] > moveMonth) {
-			$(divId).style.display = "none";
+		if(moveYear == curYear) {
+			if( apartment[3] > moveMonth) {
+				$(divId).style.display = "none";
+			}			
 		}
 		
 		//check day
@@ -313,6 +339,7 @@ window.onload = function () {
 	load_apartments();
 	$("submit").onclick = get_variables;
 	$("reset").onclick = reset_aparts;
+	
 	//alert(apart1.neighborhood + "\n" + 1
 	//apart1.bedrooms + "\n" + apart1.bathrooms + "\n" +
 	//apart1.month + "\n" + apart1.day + "\n" + apart1.year);

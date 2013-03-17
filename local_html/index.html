@@ -2,18 +2,23 @@
 <html>
 	
 	<head>
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<meta name="description" content="A JavaScript Application sorting through Philadelphia Apartments">
+		<meta name="author" content="Chelsea Myers from chelmyers.com">
 		
 		<title>The Apt App</title>
 		<link rel="stylesheet" href="stylesheet.css">
 
-		<script rel="javascript" type="text/javascript" src="apartments.js"></script>
+		<script type="text/javascript" src="apartments.js"></script>
 		
 		<!--[if lt IE 9]>  
    		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
     	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>  
   		<![endif]--> 
   		 
-  		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  		
 
 	</head>
 
@@ -43,27 +48,28 @@
 								<option value="Washington Square">Washington Square</option>
 								<option value="Old City">Old City</option>
 								<option value="University City">University City</option>
+								<option value="All">All</option>
 							</select>
 							
 												
-							</br>	
+							<br>	
 												
 							<label>Move In Date: </label>
-							<input id="moveInDate" type="number" name="date" placeholder="MM/DD/YYYY"/>
+							<input id="moveInDate" type="text" name="date" placeholder="MM/DD/YYYY"/>
 						
 						</div> <!--sect1-->
 						
 						
 						<div id="sect2">
-							<label for="bedrooms">Bedrooms:</label>
+							<label>Bedrooms:</label>
 							<input id="bedroom0" type="radio" name="bedrooms" value="0" checked >0
 							<input id="bedroom1" type="radio" name="bedrooms" value="1">1
 							<input id="bedroom2" type="radio" name="bedrooms" value="2">2
 							<input id="bedroom3" type="radio" name="bedrooms" value="3">3
 								
-							</br>
+							<br>
 		
-							<label for="bathrooms">Bathrooms:</label>
+							<label>Bathrooms:</label>
 							<input id="bathroom1" type="radio" name="bathroom" value="1" checked>1
 							<input id="bathroom2" type="radio" name="bathroom" value="2">2
 							<input id="bathroom3" type="radio" name="bathroom" value="3">3
@@ -74,7 +80,7 @@
 							<label style="padding-right:2px;">Min Rent: </label>
 							<input id="min" type="number" name="min"/>
 					
-							</br>
+							<br>
 							
 							<label>Max Rent: </label>
 							<input id="max" type="number" name="max"/>
@@ -105,7 +111,7 @@
 					<p>Available: <span id="avail1"></span></p>	
 					<p>Monthly Rent: <span id="rent1"></span></p>
 					
-					<a href="mailto:chel.myers@gmail.com?subject=Listing 1001"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
+					<a href="mailto:chel.myers@gmail.com?subject=Listing%201001"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
 
 				</div>
 
@@ -118,7 +124,7 @@
 					<p>Available: <span id="avail2"></span></p>	
 					<p>Monthly Rent: <span id="rent2"></span></p>
 
-					<a href="mailto:chel.myers@gmail.com?subject=Listing 1002"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
+					<a href="mailto:chel.myers@gmail.com?subject=Listing%201002"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
 					
 				</div>
 
@@ -131,7 +137,7 @@
 					<p>Available: <span id="avail3"></span></p>	
 					<p>Monthly Rent: <span id="rent3"></span></p>
 					
-					<a href="mailto:chel.myers@gmail.com?subject=Listing 1003"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
+					<a href="mailto:chel.myers@gmail.com?subject=Listing%201003"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
 
 				</div>
 
@@ -144,7 +150,7 @@
 					<p>Available: <span id="avail4"></span></p>	
 					<p>Monthly Rent: <span id="rent4"></span></p>
 					
-					<a href="mailto:chel.myers@gmail.com?subject=Listing 1004"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
+					<a href="mailto:chel.myers@gmail.com?subject=Listing%201004"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
 					
 				</div>
 
@@ -157,7 +163,7 @@
 					<p>Available: <span id="avail5"></span></p>	
 					<p>Monthly Rent: <span id="rent5"></span></p>
 					
-					<a href="mailto:chel.myers@gmail.com?subject=Listing 1005"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
+					<a href="mailto:chel.myers@gmail.com?subject=Listing%201005"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
 					
 				</div>
 
@@ -170,7 +176,7 @@
 					<p>Available: <span id="avail6"></span></p>	
 					<p>Monthly Rent: <span id="rent6"></span></p>
 					
-					<a href="mailto:chel.myers@gmail.com?subject=Listing 1006"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
+					<a href="mailto:chel.myers@gmail.com?subject=Listing%201006"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
 					
 				</div>
 
@@ -183,7 +189,7 @@
 					<p>Available: <span id="avail7"></span></p>	
 					<p>Monthly Rent: <span id="rent7"></span></p>
 					
-					<a href="mailto:chel.myers@gmail.com?subject=Listing 1007"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
+					<a href="mailto:chel.myers@gmail.com?subject=Listing%201007"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
 					
 				</div>
 
@@ -196,7 +202,7 @@
 					<p>Available: <span id="avail8"></span></p>	
 					<p>Monthly Rent: <span id="rent8"></span></p>
 					
-					<a href="mailto:chel.myers@gmail.com?subject=Listing 1008"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
+					<a href="mailto:chel.myers@gmail.com?subject=Listing%201008"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
 					
 				</div>
 
@@ -209,7 +215,7 @@
 					<p>Available: <span id="avail9"></span></p>	
 					<p>Monthly Rent: <span id="rent9"></span></p>
 					
-					<a href="mailto:chel.myers@gmail.com?subject=Listing 1009"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
+					<a href="mailto:chel.myers@gmail.com?subject=Listing%201009"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
 					
 				</div>
 
@@ -222,7 +228,7 @@
 					<p>Available: <span id="avail10"></span></p>	
 					<p>Monthly Rent: <span id="rent10"></span></p>
 					
-					<a href="mailto:chel.myers@gmail.com?subject=Listing 1010"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
+					<a href="mailto:chel.myers@gmail.com?subject=Listing%201010"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
 					
 				</div>
 
@@ -235,7 +241,7 @@
 					<p>Available: <span id="avail11"></span></p>	
 					<p>Monthly Rent: <span id="rent11"></span></p>
 					
-					<a href="mailto:chel.myers@gmail.com?subject=Listing 1011"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
+					<a href="mailto:chel.myers@gmail.com?subject=Listing%201011"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
 					
 				</div>
 
@@ -248,7 +254,7 @@
 					<p>Available: <span id="avail12"></span></p>	
 					<p>Monthly Rent: <span id="rent12"></span></p>
 					
-					<a href="mailto:chel.myers@gmail.com?subject=Listing 1012"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
+					<a href="mailto:chel.myers@gmail.com?subject=Listing%201012"><img class="mailIcon" src="img/mailIcon.png" alt="Send Email About Property"/></a>
 					
 				</div>
 
@@ -261,4 +267,4 @@
 
 	</body><!--end of body-->
 
-</html><!--end of html->
+</html><!--end of html-->
