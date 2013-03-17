@@ -10,29 +10,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'mateReg';
-    src: url('fonts/mate-regular-webfont.eot');
-    src: url('fonts/mate-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/mate-regular-webfont.woff') format('woff'),
-         url('fonts/mate-regular-webfont.ttf') format('truetype'),
-         url('fonts/mate-regular-webfont.svg#materegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'hello_denver';
-    src: url('fonts/hellodenverdisplayregular_v1.6-webfont.eot');
-    src: url('fonts/hellodenverdisplayregular_v1.6-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/hellodenverdisplayregular_v1.6-webfont.woff') format('woff'),
-         url('fonts/hellodenverdisplayregular_v1.6-webfont.ttf') format('truetype'),
-         url('fonts/hellodenverdisplayregular_v1.6-webfont.svg#hello_denver_display_regulaRg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body,
 html {
 	padding:0;
@@ -204,10 +181,60 @@ span {
 		width:400px;
 	}
 
+/*SMALL ANDRIOD SETTING*/
+@media all and (max-width:300px) and (min-width: 0px) {
 
+	#main {
+		max-width: 240px;
+	}
+	
+	#logo {
+		width:150px;
+	}
+	
+	.apartImg {
+		width:185px;
+	}
+	
+	.mailIcon {
+	border: none;
+	position:relative;
+	left: 154px;
+	}
+	
+	#noResults {
+	width:185px;
+	height:185px;
+	margin-bottom: 25px;
+	}
+		#noResults img {
+			width:185px;
+		}
+		
+	#sect1 {
+		width:240px;
+	}
+	#sect2 {
+		width:240px;
+	}
+	#sect3 {
+		margin-left:0px;
+	}
+	#sect4{
+		margin-left:0px;
+	}
 
+	.apartment {
+		font-size: .9em;
+		min-width:193px;
+		margin-left:20px;
+	}
+	
+	
+}
 
-@media all and (max-width: 400px) and (min-width:0px) {
+/*IPHONE SETTINGS*/
+@media all and (max-width: 400px) and (min-width:301px) {
 	
 	#main {
 		max-width: 309px;
@@ -233,13 +260,26 @@ span {
 		#noResults img {
 			width:200px;
 		}
+		
+	#sect1 {
+		width:230px;
+		padding: 0px 35px 0px 35px;
+	}
+	#sect2 {
+		width:190px;
+		padding: 0px 55px 0px 55px;
+	}
+	#sect3 {
+		margin-left:0px;
+	}
+	#sect4{
+		margin-left:0px;
+	}
 
 
-	
-	
 }
 
-
+/*TWO COLUMNS*/
 @media all and (max-width: 738px) and (min-width: 401px){
 	
 	#logo {
@@ -255,6 +295,8 @@ span {
 	
 }
 
+/*THREE COLUMNS*/
+
 @media all and (max-width: 1108px) and (min-width: 739px){
 	
 
@@ -263,6 +305,8 @@ span {
 	}
 	
 }
+
+/*FOUR COLUMNS*/
 
 @media all and (min-width: 1600px){
 	
