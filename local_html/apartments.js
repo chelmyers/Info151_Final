@@ -294,7 +294,7 @@ var search_aparts = function () {
 		}
 		
 		//check day
-		if(apartment[3] == moveDay){
+		if(apartment[3] == moveMonth){
 			if( apartment[4] > moveDay) {
 				$(divId).style.display = "none";
 			}
