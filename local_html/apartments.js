@@ -294,9 +294,12 @@ var search_aparts = function () {
 		}
 		
 		//check day
-		if( apartment[4] > moveDay) {
-			$(divId).style.display = "none";
+		if(apartment[3] == moveDay){
+			if( apartment[4] > moveDay) {
+				$(divId).style.display = "none";
+			}
 		}
+
 		
 		//check year
 		if( apartment[5] > moveYear) {
